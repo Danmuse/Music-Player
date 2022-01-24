@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: inherit;
+  height: 100vh;
+}
+
+body {
+  background-color: grey;
+  font-family: Calibri Light, Calibri, sans-serif;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(10, 10, 10));
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  max-width: 420px;
+  min-width: 18%;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem black;
+}
+
+/* Information Content */
+
+.title {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.group {
+  color: rgb(175, 175, 175);
+  margin: 0.5rem 0 1.2rem 0;
+}
+
+.cover {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.4rem black;
+}
+
+/* Controls */
+
+.progressContainer {
+  background-color: grey;
+  margin: 1rem auto;
+  width: 10rem;
+  height: 0.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.progress {
+  background-color: goldenrod;
+  height: 100%;
+  width: 0;
+  border-radius: 0.2rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+/* Songs List */
+
+.songs {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  text-align: initial;
+  font-weight: bold;
+  cursor: pointer;
+  color: grey;
+  line-height: 1.5rem;
+}
+
+li.active {
+  color: whitesmoke;
+}

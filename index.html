@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script type="module" defer src="./js/main.js"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <article class="player" id="player">
+      <h1 class="title" id="title">Choose a Song</h1>
+      <h3 class="group" id="group"></h3>
+      <img
+        class="cover"
+        id="cover"
+        src="./images/chooseSong.png"
+        alt="Soundtrack Photo"
+      />
+      <audio src="" id="audio"></audio>
+      <div class="progressContainer" id="progressContainer">
+        <section class="progress" id="progress"></section>
+      </div>
+      <div class="controls">
+        <button class="PrevSong">
+          <embed id="PrevSong" src="./images/skip-back.png" type="image/png" />
+        </button>
+        <button class="Play" id="PlayBTN">
+          <embed id="Play" src="./images/play.png" type="image/png" />
+        </button>
+        <button class="NextSong">
+          <embed
+            id="NextSong"
+            src="./images/skip-forward.png"
+            type="image/png"
+          />
+        </button>
+      </div>
+      <ul class="songs" id="songs"></ul>
+    </article>
+  </body>
+</html>
